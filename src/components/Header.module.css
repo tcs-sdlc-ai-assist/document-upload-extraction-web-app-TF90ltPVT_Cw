@@ -1,0 +1,164 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+  height: 64px;
+  background: var(--color-surface);
+  border-bottom: 1px solid var(--color-border);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.headerContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.leftSection {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 1.2em;
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.navLinks {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.navLink {
+  color: var(--color-text);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.navLink:hover {
+  color: var(--color-primary);
+}
+
+.rightSection {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.progressContainer {
+  flex: 1;
+  max-width: 300px;
+  margin: 0 24px;
+}
+
+.progressSection {
+  flex: 1;
+  max-width: 300px;
+  margin: 0 24px;
+}
+
+.userSection {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.userGreeting {
+  font-weight: 500;
+  color: var(--color-text);
+}
+
+.username {
+  font-weight: 500;
+  color: var(--color-text);
+}
+
+.logoutButton {
+  padding: 6px 16px;
+  background: none;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  color: var(--color-text);
+  font-size: 0.875rem;
+  transition: background-color 0.2s ease;
+}
+
+.logoutButton:hover {
+  background: #f1f5f9;
+}
+
+.logoutBtn {
+  padding: 6px 16px;
+  background: none;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  color: var(--color-text);
+  font-size: 0.875rem;
+  transition: background-color 0.2s ease;
+}
+
+.logoutBtn:hover {
+  background: #f1f5f9;
+}
+
+.hamburgerButton {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5em;
+  cursor: pointer;
+  color: var(--color-text);
+  padding: 4px;
+}
+
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5em;
+  cursor: pointer;
+  color: var(--color-text);
+  padding: 4px;
+}
+
+@media (max-width: 768px) {
+  .hamburgerButton {
+    display: block;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .navLinks {
+    display: none;
+  }
+
+  .progressContainer {
+    display: none;
+  }
+
+  .progressSection {
+    display: none;
+  }
+}

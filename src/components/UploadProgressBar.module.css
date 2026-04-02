@@ -1,0 +1,43 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.fileProgress {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.fileName {
+  font-size: 0.875rem;
+  color: var(--color-text-secondary);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.track {
+  height: 8px;
+  background: var(--color-border);
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+}
+
+.fill {
+  height: 100%;
+  background: var(--color-primary);
+  border-radius: var(--radius-sm);
+  transition: width 0.3s ease;
+}
+
+.percentage {
+  font-size: 0.875rem;
+  font-weight: bold;
+  color: var(--color-text);
+}
+
+.complete .fill {
+  background: var(--color-success);
+}
